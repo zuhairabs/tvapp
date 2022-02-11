@@ -1,0 +1,48 @@
+:root {
+  --primary: #6c43bf;
+  --primary-light: rgb(126, 87, 211);
+  --button-light: rgba(148, 148, 148, 0.6);
+  --tab-light: rgba(255, 255, 255, 0.6);
+  --button-light-lg: rgba(255, 255, 255, 0.3);
+  --button-active: rgba(255, 255, 255, 0.8);
+  --text-light: rgba(255, 255, 255, 0.8);
+  --audio-button-color: #eee;
+  --red: #f4415f;
+  --dark: #1a1a1a;
+  --preloader-bg: #212121;
+  --white: #fff;
+  --loading-light: #cfe0f0;
+  --loading-color: var(--primary);
+
+  --shadow-light: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 3px 6px rgba(0, 0, 0, 0.1);
+  --card-shadow: 0 0 0.5rem 0.5rem rgba(0, 0, 0, 0.3);
+  --inset-shadow: inset 0px -30px 65px 7px rgba(30, 30, 30, 0.6);
+  --text-shadow: 4px 4px 12px rgb(0 0 0 / 90%);
+}
+
+.loading-bar-container {
+  height: 2px;
+  width: 100%;
+  background-color: var(--loading-light);
+  position: absolute;
+  overflow: hidden;
+}
+
+.loading-bar {
+  height: 100%;
+  width: 50%;
+  background-color: var(--loading-color);
+  position: absolute;
+  left: -50%;
+  animation: loading 2s ease-in 0.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(400%);
+  }
+}
